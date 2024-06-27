@@ -20,15 +20,6 @@
   font-family: Bricolage Grotesque;
 }
 
-.flexbox {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  column-gap: 2rem;
-  row-gap: 1rem;
-  flex-wrap: wrap;
-}
-
 header {
   position: fixed;
   z-index: 10;
@@ -39,10 +30,15 @@ header {
   -webkit-backdrop-filter: blur(8px);
 }
 
+header div{
+  max-width: 70rem;
+  margin: auto;
+}
+
 header h1 {
   display: block;
   float: left;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 1rem 1.4rem;
 }
 
 header ul {
@@ -50,17 +46,19 @@ header ul {
   overflow: hidden;
 }
 
-header li a {
-  position: relative;
+header a {
   display: block;
-  padding: 0 0 1rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1.4rem;
   font-size: 1.3rem;
   color: black;
   text-decoration: none;
 }
 
-header li a:before,
-header .menu-btn:before {
+header li{
+  position: relative;
+}
+
+header li::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -73,8 +71,7 @@ header .menu-btn:before {
   transition: transform .3s ease-in-out;
 }
 
-header li a:hover::before,
-header .menu-btn:hover::before {
+header a:hover li::before{
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -91,7 +88,7 @@ header .menu {
 
 header .menu-icon {
   float: right;
-  padding: 2.2rem 1rem 0 0;
+  padding: 2.1rem 1.4rem;
   position: relative;
   user-select: none;
 }
@@ -101,6 +98,7 @@ header .menu-icon .navicon {
   display: block;
   height: 3px;
   position: relative;
+  transition: background .2s ease-out;
   width: 23px;
 }
 
@@ -130,7 +128,7 @@ header .menu-btn {
 }
 
 header .menu-btn:checked~.menu {
-  max-height: 240px;
+  max-height: 7.5rem;
 }
 
 header .menu-btn:checked~.menu-icon .navicon {
@@ -150,15 +148,10 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  header li {
+@media (min-width: 45em) {
+  header a {
     float: left;
-  }
-
-  header li a {
-    padding: 1.4rem 1.5rem 0 0;
+    padding: 1.4rem 0.7rem;
   }
 
   header .menu {

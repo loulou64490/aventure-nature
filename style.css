@@ -1,0 +1,63 @@
+:root {
+  /* Accent color */
+  --bg-color: #337a127a;
+}
+
+* {
+  /* Reset property */
+  margin: 0;
+  padding: 0;
+
+  /* Disable text selection */
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* Custom cursor */
+  cursor: url('assets/cursor.svg'), auto;
+
+  /* Font */
+  font-family: Bricolage Grotesque;
+}
+
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+
+  background-color: var(--bg-color);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header a {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+}
+
+
+main {
+  min-height: 100%;
+}
+
+footer {
+  display: inline;
+}

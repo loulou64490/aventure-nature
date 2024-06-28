@@ -46,7 +46,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 9999;
   width: 100%;
 
   background-color: transparent;
@@ -232,13 +232,17 @@ main .container img {
 
 main .contenu {
   color: var(--contenu);
-  display: grid;
-  justify-content: center;
   background-color: var(--contenu-bg);
 }
 
+main .programme-ete div {
+  padding: 1rem;
+}
+
 main #map {
-  height: 10rem;
+  margin: 0;
+  padding: 0;
+  height: 20rem;
   width: 100%;
 }
 

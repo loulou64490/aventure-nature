@@ -127,22 +127,22 @@
 
             </div>
             <div class="contact" id="contact">
-                <a href="https://maps.app.goo.gl/vGhv9V7jjsKsyTrD7">La Ferme de Mymy, Route du Berat du Bas 64490 Borce</a>
+                <a href="https://maps.app.goo.gl/vGhv9V7jjsKsyTrD7">La Ferme de Mymy, Route du Berat du Bas 64490
+                    Borce</a>
                 <a href="tel:+33686722920">06 86 72 29 20</a>
-                <div id="map">
-
-                </div>
-                <script>
-                    var map = L.map('map').setView([51.505, -0.09], 13);
-                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        maxZoom: 19,
-
-                    }).addTo(map);
-                </script>
-
             </div>
         </div>
-        </div>
+        <div id="map"></div>
+        <script>
+            var map = L.map('map').setView([42.87586, -0.56110], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+            map.attributionControl.setPrefix(false)
+            var marker = L.marker([42.87586, -0.56110]).addTo(map);
+            marker.bindPopup("<a href='https://maps.app.goo.gl/vGhv9V7jjsKsyTrD7'>Google Maps</a>");
+            map.removeControl(map.zoomControl);
+        </script>
     </main>
     <footer>
         &copy; 2024 La Ferme de Mymy - <a href="mentions-légales">Mentions légales</a>

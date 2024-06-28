@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Class Toggle</title>
+    <style>
+        /* Exemple de style pour la classe .scrolled */
+        .scrolled {
+            background-color: yellow;
+            /* Change le fond en jaune lorsque la classe est ajoutée */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">Mon En-tête</header>
+    <div style="height: 2000px;">Contenu de la page pour permettre le défilement.</div>
+
+    <script>
+        // Sélectionnez l'élément auquel vous voulez ajouter la classe
+        const header = document.getElementById('main-header');
+
+        // Ajoutez un gestionnaire d'événements pour le défilement
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

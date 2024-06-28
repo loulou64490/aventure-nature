@@ -18,6 +18,8 @@ html {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -210,10 +212,6 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   }
 }
 
-main {
-  min-height: 100vh;
-}
-
 main .container {
   display: flex;
   justify-content: center;
@@ -233,15 +231,15 @@ main .container img {
 }
 
 main .contenu {
-  display: flex;
+  color: var(--contenu);
+  display: grid;
   justify-content: center;
   background-color: var(--contenu-bg);
 }
 
-main p {
-  color: var(--contenu);
-  max-width: var(--max-width);
-  padding: 1rem;
+main #map {
+  height: 10rem;
+  width: 100%;
 }
 
 footer {

@@ -1,7 +1,7 @@
 :root {
   /* Accent color */
-  --header-bg: #c9c9c983;
-  --sub-header-bg: #e6ecd1;
+  /* --header-bg: #ffffff93;
+  --sub-header-bg: #e6ecd1; */
   --contenu: #3b3000;
   --contenu-bg: #E7D37F;
 
@@ -46,7 +46,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 9999;
+  z-index: 10;
   width: 100%;
 
   background-color: transparent;
@@ -59,6 +59,7 @@ header {
   background-color: var(--header-bg);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
+  /* box-shadow: 0 0px 8px 4px #c9c9c969; */
 }
 
 header div {
@@ -213,6 +214,7 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 }
 
 main .container {
+  background-color: #5f8cc4;
   display: flex;
   justify-content: center;
   position: relative;
@@ -237,6 +239,17 @@ main .contenu {
 
 main .programme-ete div {
   padding: 1rem;
+}
+
+main #lightgallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main #lightgallery img{
+  margin: 1rem;
+  border-radius: 20px;
+  min-width: 10rem;
 }
 
 main #map {

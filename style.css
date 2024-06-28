@@ -1,8 +1,12 @@
 :root {
   /* Accent color */
-  --bg-color: #dbe4c483;
-  --sub-bg-color: #dbe4c4;
+  --header-bg: #c9c9c983;
+  --sub-header-bg: #e6ecd1;
+  --contenu: #3b3000;
+  --contenu-bg: #E7D37F;
+
   --blur: 8px;
+  --max-width: 70rem;
 }
 
 body,
@@ -50,17 +54,21 @@ header {
 }
 
 .scrolled {
-  background-color: var(--bg-color);
+  background-color: var(--header-bg);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
 }
 
 header div {
-  max-width: 70rem;
+  max-width: var(--max-width);
   margin: auto;
 }
 
 header h1 {
+background: #006531;
+  background: linear-gradient(to bottom right, #006531 0%, #9B0074 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
   float: left;
   padding: 1rem 0 1rem 1.4rem;
@@ -90,7 +98,7 @@ header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  background-color: var(--sub-bg-color);
+  background-color: var(--sub-header-bg);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
 }
@@ -140,7 +148,7 @@ header .menu-btn {
 }
 
 header .menu-btn:checked~.menu {
-  max-height: 9rem;
+  max-height: 12rem;
 }
 
 header .menu-btn:checked~.menu-icon .navicon {
@@ -160,7 +168,7 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 55em) {
   header h1 {
     padding: 1rem 0 1rem 0.7rem;
   }
@@ -171,7 +179,7 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 
   header a {
     float: left;
-    padding: 1.4rem 0.7rem;
+    padding: 1.5rem 0.7rem 1.3rem 0.7rem;
   }
 
   header .menu {
@@ -228,7 +236,20 @@ main .container img {
   transform: translate(-50%, -50%);
 }
 
+main .contenu {
+  display: flex;
+  justify-content: center;
+  background-color: var(--contenu-bg);
+}
+
+main p {
+  color: var(--contenu);
+  max-width: var(--max-width);
+  padding: 1rem;
+}
+
 footer {
+  text-align: center;
   background-color: #001a00;
   color: #9ebe9e;
   padding: 1rem;

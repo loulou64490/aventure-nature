@@ -5,6 +5,17 @@
   --blur: 8px;
 }
 
+body,
+html {
+  overflow-x: hidden;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 * {
   /* Reset property */
   margin: 0;
@@ -20,7 +31,6 @@
 
   /* Font */
   font-family: Bricolage Grotesque;
-
 }
 
 a {
@@ -53,7 +63,7 @@ header div {
 header h1 {
   display: block;
   float: left;
-  padding: 1rem 0 1rem 0.7rem;
+  padding: 1rem 0 1rem 1.4rem;
 }
 
 header ul {
@@ -90,7 +100,7 @@ header .menu {
 header .menu-icon {
   cursor: url('assets/link.svg'), auto;
   float: right;
-  padding: 2.1rem 0.7rem;
+  padding: 2.1rem 1.4rem;
   position: relative;
   user-select: none;
 }
@@ -151,6 +161,10 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 }
 
 @media (min-width: 45em) {
+  header h1 {
+    padding: 1rem 0 1rem 0.7rem;
+  }
+
   header div {
     padding: 0 0.7rem 0 0.7rem;
   }
@@ -196,10 +210,30 @@ main {
   min-height: 100vh;
 }
 
-main .home {
-  max-height: 100%;
+main .container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+main .container img {
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
-  margin: 1rem;
+  background-color: #001a00;
+  color: #9ebe9e;
+  padding: 1rem;
+}
+
+footer a {
+  color: #9ebe9e;
 }

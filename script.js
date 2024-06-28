@@ -1,3 +1,6 @@
+document.oncontextmenu = new Function("return false;")
+window.ondragstart = function () { return false }
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
 
@@ -10,9 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function switchCheckbox() {
-    // Récupère la case à cocher par son ID
+function hideMenu() {
     var checkbox = document.getElementById("menu-btn");
-    // Bascule l'état de la case à cocher
     checkbox.checked = false;
 }

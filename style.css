@@ -213,6 +213,10 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   }
 }
 
+main a {
+  color: var(--contenu);
+}
+
 main .container {
   background-color: #5f8cc4;
   display: flex;
@@ -241,15 +245,33 @@ main .programme-ete div {
   padding: 1rem;
 }
 
-main #lightgallery{
+main #lightgallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main #lightgallery img{
+
+main #lightgallery img {
   margin: 1rem;
   border-radius: 20px;
   min-width: 10rem;
+}
+
+main .list {
+  display: inline;
+  justify-content: space-between;
+}
+
+main .contact a {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+main .contact svg {
+  padding-right: 0.5rem;
+  fill: var(--contenu);
 }
 
 main #map {

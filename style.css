@@ -257,6 +257,30 @@ main #lightgallery img {
   min-width: 10rem;
 }
 
+main table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #ac9640;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+main thead {
+  background-color: #d4be62;
+}
+
+main tbody>tr:nth-of-type(even) {
+  background-color: #e2cd7a;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border-right: 1px solid #ccb55b;
+}
+
 main .list {
   display: inline;
   justify-content: space-between;

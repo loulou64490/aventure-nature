@@ -245,17 +245,21 @@ main .programme-ete div {
   padding: 1rem;
 }
 
-main #lightgallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+main #lightgallery {}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
-main #lightgallery img {
-  margin: 1rem;
-  border-radius: 20px;
-  min-width: 10rem;
+.grid-container img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
 }
+
 
 main table {
   border-collapse: separate;

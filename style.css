@@ -20,6 +20,8 @@ html {
   user-select: none;
 
   scroll-behavior: smooth;
+
+  font-family: Bricolage Grotesque;
 }
 
 * {
@@ -34,9 +36,6 @@ html {
 
   /* Custom cursor */
   cursor: url('assets/cursor.svg'), auto;
-
-  /* Font */
-  font-family: Bricolage Grotesque;
 }
 
 a {
@@ -241,11 +240,50 @@ main .contenu {
   background-color: var(--contenu-bg);
 }
 
-main .programme-ete div {
+main h1 {
+  font-size: 2.3rem;
+  font-family: Syne;
+  font-weight: normal;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-family: Dancing Script;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  font-family: Syne;
+  font-weight: normal;
+}
+
+main h4 {
+  font-size: 2rem;
+}
+
+main h5 {
+  font-size: 1.2rem;
+  font-family: Syne;
+  font-weight: normal;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
 
-main #lightgallery {}
+.hagrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 50rem) {
+  .hagrid {
+    grid-template-columns: 1fr 1fr
+  }
+}
 
 .grid-container {
   display: grid;

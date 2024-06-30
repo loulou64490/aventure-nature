@@ -58,7 +58,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
 
   background-color: transparent;
@@ -237,11 +237,6 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   color: var(--explo)
 }
 
-.bg-gallerie {
-  background-color: var(--bg-gallerie);
-  color: var(--gallerie)
-}
-
 .bg-ferme {
   background-color: var(--bg-ferme);
   color: var(--ferme)
@@ -323,10 +318,15 @@ main .activite {
   box-shadow: var(--shadow);
 }
 
+.gallerie{
+  padding: 6rem 1rem 1rem 1rem;
+  background-color: var(--bg-gallerie);
+  color: var(--gallerie)
+}
+
 .grid-container {
   display: grid;
-  gap: 10px;
-  padding: 10px;
+  gap: 1rem;
 }
 
 .grid-container img {

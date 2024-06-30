@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://www.la-ferme-de-mymy.fr/gallerie.html</loc>
+		<priority>0.00</priority>
+		<lastmod>2024-06-30</lastmod>
+	</url>
+	<url>
 		<loc>https://www.la-ferme-de-mymy.fr</loc>
-		<priority>1.00</priority>
+		<priority>NaN</priority>
 		<lastmod>2024-06-30</lastmod>
 	</url>
 </urlset>

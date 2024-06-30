@@ -1,8 +1,6 @@
 :root {
   /* Accent color */
-  /* --header-bg: #ffffff93;
-  --sub-header-bg: #e6ecd1; */
-
+  --header-bg: #ffffff56;
   --programme: #422006;
   --bg-programme: #fef9c3;
   --aventure: #422006;
@@ -66,14 +64,14 @@ header {
   background-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  transition: all .5s ease;
+  transition: all .5s ease, border-bottom 0s;
 }
 
 .scrolled {
   background-color: var(--header-bg);
   backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(var(--blur));
-  /* box-shadow: 0 0px 8px 4px #c9c9c969; */
+  border-bottom: 2px solid black;
 }
 
 header div {
@@ -111,9 +109,6 @@ header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  background-color: var(--sub-header-bg);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
 }
 
 /* menu icon */
@@ -375,7 +370,7 @@ main table {
   border-collapse: separate;
   border-spacing: 0;
   border: 2px solid var(--ferme);
-  box-shadow: var(--shadow);  
+  box-shadow: var(--shadow);
   width: 100%;
   max-width: 40rem;
   border-radius: 15px;
@@ -393,7 +388,12 @@ main tbody>tr:nth-of-type(even) {
 th,
 td {
   padding: 0.5rem;
-  border-right: 1px solid var(--ferme);
+  border-right: 2px solid var(--ferme);
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
 }
 
 main .list {

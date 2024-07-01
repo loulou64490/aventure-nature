@@ -71,6 +71,7 @@ header h1 {
   display: block;
   float: left;
   padding: 1rem 0 1rem 1.4rem;
+  cursor: url('assets/link.svg'), auto;
 }
 
 header ul {
@@ -230,7 +231,7 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 main .max {
   margin: auto;
   max-width: var(--max-width);
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 6rem 1rem 1rem 1rem;
 }
 
 main .container {

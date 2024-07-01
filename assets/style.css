@@ -38,12 +38,12 @@ html {
   user-select: none;
 
   /* Custom cursor */
-  cursor: url('assets/cursor.svg'), auto;
+  cursor: url('cursor.svg'), auto;
 }
 
 a {
   color: black;
-  cursor: url('assets/link.svg'), auto;
+  cursor: url('link.svg'), auto;
 }
 
 header {
@@ -71,7 +71,7 @@ header h1 {
   display: block;
   float: left;
   padding: 1rem 0 1rem 1.4rem;
-  cursor: url('assets/link.svg'), auto;
+  cursor: url('link.svg'), auto;
 }
 
 header ul {
@@ -88,7 +88,7 @@ header ul a {
 }
 
 header li {
-  cursor: url('assets/link.svg'), auto;
+  cursor: url('link.svg'), auto;
   position: relative;
 }
 
@@ -103,7 +103,7 @@ header .menu {
 /* menu icon */
 
 header .menu-icon {
-  cursor: url('assets/link.svg'), auto;
+  cursor: url('link.svg'), auto;
   float: right;
   padding: 2.1rem 1.4rem;
   position: relative;
@@ -381,7 +381,10 @@ footer .space{
 
 footer {
   border-top: 2px solid #264e00;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
   background-color: #cdebb0;
   color: #264e00;
   padding: 1rem;
@@ -410,7 +413,7 @@ footer a {
   height: auto;
   border: 2px solid var(--gallerie);
   box-shadow: var(--shadow);
-  cursor: url('assets/link.svg'), auto;
+  cursor: url('link.svg'), auto;
 }
 
 @media (min-width: 300px) {

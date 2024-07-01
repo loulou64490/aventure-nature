@@ -210,28 +210,32 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 
 .bg-programme {
   background-color: var(--bg-programme);
-  color: var(--programme)
+  color: var(--programme);
+  border-top: 2px solid var(--programme);
 }
 
 .bg-aventure {
   background-color: var(--bg-aventure);
-  color: var(--aventure)
+  color: var(--aventure);
+  border-bottom: 2px solid var(--aventure);
 }
 
 .bg-explo {
   background-color: var(--bg-explo);
-  color: var(--explo)
+  color: var(--explo);
+  border-bottom: 2px solid var(--explo);
 }
 
 .bg-ferme {
   background-color: var(--bg-ferme);
-  color: var(--ferme)
+  color: var(--ferme);
+  border-bottom: 2px solid var(--ferme);
 }
 
 main .max {
   margin: auto;
   max-width: var(--max-width);
-  padding: 6rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 main .container {
@@ -257,7 +261,6 @@ main h1 {
   font-size: 2.3rem;
   font-family: Syne;
   font-weight: normal;
-  padding-bottom: 2rem;
 }
 
 main h2 {
@@ -290,7 +293,7 @@ main h5 {
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 50rem) {
   .hagrid {
     grid-template-columns: 1fr 1fr
   }
@@ -344,7 +347,7 @@ main .list {
 
 .bg-contact {
   background-color: var(--bg-contact);
-  color: var(--contact)
+  color: var(--contact);
 }
 
 main .contact a {
@@ -367,7 +370,17 @@ main #map {
   width: 100%;
 }
 
+iframe {
+  float: right;
+}
+
+footer .space{
+  display: block;
+  height: 3Opx;
+}
+
 footer {
+  border-top: 2px solid #264e00;
   text-align: center;
   background-color: #cdebb0;
   color: #264e00;
@@ -403,41 +416,35 @@ footer a {
 @media (min-width: 300px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 colonnes pour les écrans ≥ 600px */
   }
 }
 
 @media (min-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
-    /* 2 colonnes pour les écrans ≥ 600px */
   }
 }
 
 @media (min-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
-    /* 3 colonnes pour les écrans ≥ 900px */
   }
 }
 
 @media (min-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(5, 1fr);
-    /* 4 colonnes pour les écrans ≥ 1200px */
   }
 }
 
 @media (min-width: 1500px) {
   .grid-container {
     grid-template-columns: repeat(6, 1fr);
-    /* 4 colonnes pour les écrans ≥ 1200px */
   }
 }
 
 @media (min-width: 1800px) {
   .grid-container {
     grid-template-columns: repeat(7, 1fr);
-    /* 4 colonnes pour les écrans ≥ 1200px */
   }
 }

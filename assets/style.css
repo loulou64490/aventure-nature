@@ -264,11 +264,13 @@ main h1 {
 }
 
 main h2 {
+  margin: 0 2rem;
   font-size: 3rem;
   font-family: Dancing Script;
 }
 
 main h3 {
+  margin: 0 2rem;
   font-size: 1.5rem;
   font-family: Syne;
   font-weight: normal;
@@ -282,6 +284,7 @@ main h5 {
   font-size: 1.2rem;
   font-family: Syne;
   font-weight: normal;
+  padding: 0.5rem 0;
 }
 
 .presentation {

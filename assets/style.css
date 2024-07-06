@@ -3,10 +3,8 @@
   --header-bg: #ffffff56;
   --programme: #422006;
   --bg-programme: #fef9c3;
-  --aventure: #422006;
-  --bg-aventure: #fef9c3;
-  --explo: #451a03;
-  --bg-explo: #fef3c7;
+  --bg-aventure: #ffeaa7;
+  --bg-explo: #ffdfa3;
   --gallerie: #1a2e05;
   --bg-gallerie: #f7fee7;
   --ferme: #500724;
@@ -212,6 +210,7 @@ header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   background-color: var(--bg-programme);
   color: var(--programme);
   border-top: 2px solid var(--programme);
+  border-bottom: 2px solid var(--programme);
 }
 
 .bg-aventure {
@@ -264,13 +263,11 @@ main h1 {
 }
 
 main h2 {
-  margin: 0 2rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: Dancing Script;
 }
 
 main h3 {
-  margin: 0 2rem;
   font-size: 1.5rem;
   font-family: Syne;
   font-weight: normal;
@@ -288,26 +285,59 @@ main h5 {
 }
 
 .presentation {
-  display: inline-block;
+  display:inline-block;
+  border: 2px solid ;
+  border-bottom: none;
+  margin: 1rem 1rem 0 1rem;
+  padding: 1rem 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.aventure-nature .presentation{
+  background-color: var(--bg-aventure);
+}
+
+.explo-nature .presentation{
+  background-color: var(--bg-explo);
 }
 
 .hagrid {
+  position: relative;
+  border: 2px solid var(--programme);
   display: grid;
   grid-template-columns: 1fr;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.aventure-nature .hagrid{
+  background-color: var(--bg-aventure);
+}
+
+.explo-nature .hagrid{
+  background-color: var(--bg-explo);
+}
+
+.border {
+  border-right: none;
+  border-bottom: 2px solid var(--programme);
 }
 
 @media (min-width: 50rem) {
   .hagrid {
     grid-template-columns: 1fr 1fr
   }
+  
+  .border {
+    border-right: 2px solid var(--programme);
+    border-bottom: none;
+  }
 }
 
 main .activite {
-  border-radius: 1rem;
-  border: 2px solid var(--aventure);
   padding: 2rem;
-  margin: 0.5rem;
-  box-shadow: var(--shadow);
 }
 
 main table {

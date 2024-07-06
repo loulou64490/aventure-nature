@@ -8,7 +8,7 @@
   --gallerie: #1a2e05;
   --bg-gallerie: #f7fee7;
   --ferme: #500724;
-  --ferme-sub: #50072442;
+  --ferme-sub: #50072431;
   --ferme-2sub: #5007240c;
   --bg-ferme: #fdf2f8;
   --contact: #042f2e;
@@ -257,31 +257,32 @@ main .container img {
 }
 
 main h1 {
-  font-size: 2.3rem;
-  font-family: Syne;
-  font-weight: normal;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 main h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: Dancing Script;
 }
 
 main h3 {
-  font-size: 1.5rem;
-  font-family: Syne;
-  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 main h4 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-family: Syne;
+  font-weight: normal;
 }
 
 main h5 {
   font-size: 1.2rem;
-  font-family: Syne;
-  font-weight: normal;
   padding: 0.5rem 0;
+}
+
+.bg{
+  padding: 2rem 0;
 }
 
 .presentation {
@@ -289,10 +290,14 @@ main h5 {
   border: 2px solid ;
   border-bottom: none;
   margin: 1rem 1rem 0 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.8rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   box-shadow: var(--shadow);
+}
+
+.aventure-nature{
+  margin-bottom: 2rem;
 }
 
 .aventure-nature .presentation{
@@ -337,7 +342,15 @@ main h5 {
 }
 
 main .activite {
-  padding: 2rem;
+  padding: 1rem 1.8rem;
+}
+
+main .activite p{
+  margin-bottom: 0.5rem;
+}
+
+main li{
+  margin-bottom: 0.5rem;
 }
 
 main table {
@@ -377,6 +390,9 @@ main .list {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+#contact{
+padding-bottom: 0;}
 
 .bg-contact {
   background-color: var(--bg-contact);
